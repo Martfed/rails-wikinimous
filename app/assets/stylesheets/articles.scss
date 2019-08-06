@@ -1,3 +1,46 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+ul {
+  list-style-type: none;
+  margin: 0 auto;
+}
+
+.title {
+  display:flex;
+  align-items:baseline;
+}
+
+.title p {
+  margin-left: 15px;
+  font-size: 25px;
+}
+
+#center {
+  display: flex;
+  flex-direction: column;
+}
+
+#create {
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#main-title {
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#image {
+  margin: 0 auto;
+  width: 400px;
+}
+
+#image img {
+  width: 400px;
+  height: 400px;
+}
+
+.card {
+  margin-top: 10px;
+}

@@ -1,6 +1,21 @@
-<h1><%= @article.title %></h1>
+<div class="title">
+  <h1><%= @article.title %></h1>
+  <p>
+    <%= link_to article_path(@article), method: :delete,
+        data: { confirm: "Are you sure?" } do %>
+      <i class="far fa-trash-alt"></i>
+    <% end %>
+  </p>
+  <p>
+    <%= link_to edit_article_path(@article) do %>
+      <i class="far fa-edit"></i>
+    <% end %>
+  </p>
+</div>
+<div id="image">
+  <img src= <%= @article.image %>>
+</div>
 <p><%= @article.content %></p>
 
-<p><%= link_to "Delete this article", article_path(@article), method: :delete,
-      data: { confirm: "Are you sure?" }  %></p>
-<p><%= link_to "Update this article", edit_article_path(@article) %></p>
+
+<p><%= link_to "Back to list", articles_path %></p>

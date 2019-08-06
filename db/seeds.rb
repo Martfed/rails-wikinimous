@@ -8,8 +8,9 @@ require 'faker'
 #   Character.create(name: 'Luke', movie: movies.first)
 20.times do
   article = Article.new(
-    title: Faker::Games::Pokemon.move,
-    content: Faker::Movies::Hobbit.quote
+    title: Faker::ChuckNorris.fact,
+    content: Faker::Movies::VForVendetta.speech,
+    image: 'https://picsum.photos/200'
   )
   article.save!
 end
